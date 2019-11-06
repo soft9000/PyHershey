@@ -6,3 +6,16 @@ Includes a good demo project. Simply download + unzip the project so as to run '
 Sharing is Caring!
 
 --Randall
+
+
+p.s: A dictionary of these images - one font per PDF, as well as one PDF "study guide" for each glyph therein - are also part of "The Book of Glyphs" Project.
+
+For example:
+
+https://github.com/soft9000/The-Book-of-Glyphs/blob/master/TheHersheyFonts/bog_symbolic.pdf
+
+https://github.com/soft9000/The-Book-of-Glyphs/blob/master/TheHersheyFonts/bog_symbolic/Glyph_00065.pdf
+
+Enjoy,
+
+-Rn
