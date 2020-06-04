@@ -60,8 +60,8 @@ def display_info():
     turtle4.hideturtle()
     turtle4.clear()
     turtle4.penup()
-    turtle4.goto(0, 100)
-    turtle4.write("Font: '" + font.font_name + "', Glyph #" + str(which), font=("Arial", 24, "normal"))
+    turtle4.goto(-25, 100)
+    turtle4.write("Font: '" + font.font_name + "', Glyph #" + str(which), font=("Arial", 22, "normal"))
     turtle4.st()
     draw_rectangle(turtle4, pw_rect[0], pw_rect[1], pw_rect[0] + pw_rect[2], pw_rect[1] + pw_rect[3])
 
