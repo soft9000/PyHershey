@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ProjectSettings.json
+/.vs/PyHershey/v16/.suo
+/.vs/slnx.sqlite
+/Hershey01/GsDict/__pycache__/Library.cpython-37.pyc
+/Hershey01/VectorFont/__pycache__/Font.cpython-37.pyc
+/Hershey01/VectorFont/__pycache__/FontData.cpython-37.pyc
