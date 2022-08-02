@@ -11,7 +11,7 @@ Sharing is Caring!
 
 ## Donations? 
 
-Support us by learning more! \o/
+Support us by learning more!
 
 [Python 3000: Cartesian Planes & Plotting](https://www.udemy.com/course/introduction-to-turtle-graphics/?referralCode=640D3C0F33837ADAE793)
 
@@ -19,8 +19,12 @@ Support us by learning more! \o/
 
 [Python 5000: Advanced Techniques](https://www.udemy.com/course/turtle-graphics-modeling-simulation/?referralCode=3E1EE4F426B1FFA945EB)
 
+\o/
 
-p.s: A dictionary of these images - one font per PDF, as well as one PDF "study guide" for each glyph therein - are also part of "The Book of Glyphs" Project.
+
+## The B.O.G
+
+A dictionary of these images - one font per PDF, as well as one PDF "study guide" for each glyph therein - are also part of "The Book of Glyphs" Project.
 
 For example:
 
