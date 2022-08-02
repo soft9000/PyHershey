@@ -1,3 +1,4 @@
+![Logo](https://github.com/soft9000/PyHershey/blob/master/PyHersheyLogo.png)
 # PyHershey
 A fast and easy way to use Hershey's Fonts under Python 3.
 
