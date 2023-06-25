@@ -3,6 +3,7 @@
 import turtle
 from Hershey01.VectorFont.Font import Font
 
+is_done  = False
 num_msec = 1000
 
 turtle2 = turtle.Turtle()
@@ -25,7 +26,10 @@ which = 0
 
 
 def stop_run():
-    turtle.bye()
+    global is_done
+    is_done = True
+    # turtle.bye()
+    quit()
 
 
 def next_font():
@@ -57,6 +61,9 @@ def draw_rectangle(zturt, x, y, width, height):
 
 def display_info():
     global which; global font; global pw_rect
+    global is_done
+    if is_done:
+        return
     turtle4.hideturtle()
     turtle4.clear()
     turtle4.penup()
@@ -67,10 +74,13 @@ def display_info():
 
 
 def replay():
+    global is_done
     global which; global num_sec
     global pw_font; global font_names
     global font;  global pw_rect
     global show_trace
+    if is_done:
+        return
     turtle4.clear()
     turtle3.clear()
     scale=8
@@ -92,6 +102,8 @@ def replay():
 
     line = font.get_glyph(which)
     for ss, point in enumerate(line):
+        if is_done:
+            return
         if ss % 2 == 0:
             if show_trace is False:
                 turtle3.penup()
@@ -110,10 +122,14 @@ def replay():
     which += 1
     display_info()
     turtle3.goto(pw_rect[0], pw_rect[1])
-    turtle.ontimer(replay, num_msec)
+    if is_done == False:
+        turtle.ontimer(replay, num_msec)
+    else:
+        is_done = 123 # ACK
 
 
 try:
+    is_done = False
     turtle2.color('green')
     turtle2.goto(0, 200)
     turtle2.write("VECTOR GRAPHICS", font=("Arial", 24, "normal"))
