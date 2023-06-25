@@ -1,4 +1,4 @@
-from VectorFont.FontData import FontData
+from Hershey01.VectorFont.FontData import FontData
 
 
 class Font(FontData):
@@ -9,12 +9,12 @@ class Font(FontData):
 
     @staticmethod
     def List_Fonts():
-        from GsDict.Library import Reader
+        from Hershey01.GsDict.Library import Reader
         return Reader.list_fonts()
 
     @staticmethod
     def Load_Font(font_name):
-        from GsDict.Library import Reader
+        from Hershey01.GsDict.Library import Reader
         return Font(Reader.load_font(font_name))
 
 

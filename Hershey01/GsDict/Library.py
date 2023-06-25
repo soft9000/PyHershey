@@ -1,4 +1,4 @@
-from VectorFont.FontData import FontData
+from Hershey01.VectorFont.FontData import FontData
 
 ''' Sole objective is to CONVERT those legacy GSTEXT files. 
 Most of wee 'Pythonic folks will want to simply get started 

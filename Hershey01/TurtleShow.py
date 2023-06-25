@@ -1,7 +1,7 @@
 ''' Show off Hershey's font effort using Python's Turtle Graphics '''
 
 import turtle
-from VectorFont.Font import Font
+from Hershey01.VectorFont.Font import Font
 
 num_msec = 1000
 
@@ -113,20 +113,24 @@ def replay():
     turtle.ontimer(replay, num_msec)
 
 
-turtle2.color('green')
-turtle2.goto(0, 200)
-turtle2.write("VECTOR GRAPHICS", font=("Arial", 24, "normal"))
-turtle2.goto(0, 180)
-turtle2.write("'n' = next font, 'q' = quit", font=("Arial", 16, "normal"))
-draw_rectangle(turtle2, -50, 250, 450, 600)
+try:
+    turtle2.color('green')
+    turtle2.goto(0, 200)
+    turtle2.write("VECTOR GRAPHICS", font=("Arial", 24, "normal"))
+    turtle2.goto(0, 180)
+    turtle2.write("'n' = next font, 'q' = quit", font=("Arial", 16, "normal"))
+    draw_rectangle(turtle2, -50, 250, 450, 600)
 
-# Setup events
-turtle.onkey(stop_run, "q")
-turtle.onkey(next_font, "n")
+    # Setup events
+    turtle.onkey(stop_run, "q")
+    turtle.onkey(next_font, "n")
 
-# Schedule timer
-turtle.ontimer(replay, num_msec)
+    # Schedule timer
+    turtle.ontimer(replay, num_msec)
 
-turtle.listen()
+    turtle.listen()
 
-turtle.mainloop()
+    turtle.mainloop()
+    
+except:
+    pass
