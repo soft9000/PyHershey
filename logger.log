@@ -1,0 +1,4 @@
+2023/06/25: 16.08.03 (LOCAL)	python -m build
+2023/06/25: 16.08.29 (LOCAL)	import Hershey01 - need to include those gdict files on install.
+2023/06/25: 16.08.29 (LOCAL)	setup.py resolves above. Installers work OK.
+2023/07/01: 16.44.41 (LOCAL)	python3 -m twine upload --repository pypi dist/*
