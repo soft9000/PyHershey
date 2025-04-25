@@ -13,13 +13,6 @@ Sharing is Caring!
 
 --Randall
 
-## 👽 Fleeing Leftist Tyranies 👽
-
-[Support us](https://ko-fi.com/randallnagy) by learning more!
-
-\o/
-
-
 ## The B.O.G
 
 A dictionary of these images - one font per PDF, as well as one PDF "study guide" for each glyph therein - are also part of ["The Book of Glyphs" Project](https://github.com/soft9000/The-Book-of-Glyphs).
