@@ -2,12 +2,15 @@
 # PyHershey
 A fast and easy way to use Hershey's Fonts under Python 3.
 
-Includes a good demo project. Simply `pip install PyHershey_9000` then:
+Download + unzip this project to run 'TurtleShow.py' to see how to use these fonts.
 
-```>>> import Hershey01```
+You can also:
 
-Either that, or download + unzip this project so as to run 'TurtleShow.py.'
+(1) Download the dist/[whatever].whl
 
+(2) ```python -m pip install [whatever].whl```
+
+(3) ```python -m Hershey9000```
 
 Sharing is Caring!
 
