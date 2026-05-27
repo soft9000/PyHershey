@@ -1,3 +1,11 @@
+# MISSION: The new vector font library for Modern Python.
+# STATUS: Public Release
+# VERSION: 1.0.0
+# NOTES: See https://github.com/soft9000/PyHershey
+# DATE: 2023-06-25 12:12:10
+# FILE: Test.py
+# AUTHOR: See https://ko-fi.com/randallnagy
+#
 from GsText.Reader import Reader
 font1 = Reader.load_font('japanese')
 print(font1.font_name, font1.font_rect)

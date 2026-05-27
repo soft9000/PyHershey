@@ -1,3 +1,11 @@
+# MISSION: Review the work of Dr. Allen Vincent Hershey using Modern Python.
+# STATUS: Public Release
+# VERSION: 1.0.0
+# NOTES: See https://github.com/soft9000/PyHershey
+# DATE: 2023-06-25 15:32:26
+# FILE: TurtleShow.py
+# AUTHOR: See https://ko-fi.com/randallnagy
+#
 ''' Show off Hershey's font effort using Python's Turtle Graphics '''
 
 import turtle

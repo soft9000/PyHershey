@@ -1,3 +1,11 @@
+# MISSION: Convert the classic Java output using Modern Python.
+# STATUS: Public Release
+# VERSION: 1.0.0
+# NOTES: See https://github.com/soft9000/PyHershey
+# DATE: 2023-06-25 12:34:17
+# FILE: Library.py
+# AUTHOR: See https://ko-fi.com/randallnagy
+#
 from Hershey01.VectorFont.FontData import FontData
 
 ''' Sole objective is to CONVERT those legacy GSTEXT files. 

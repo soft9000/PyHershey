@@ -1,3 +1,11 @@
+# MISSION: Use the converted data in Modern Python.
+# STATUS: Public Release
+# VERSION: 1.0.0
+# NOTES: See https://github.com/soft9000/PyHershey
+# DATE: 2023-06-25 12:29:59
+# FILE: Font.py
+# AUTHOR: See https://ko-fi.com/randallnagy
+#
 from Hershey01.VectorFont.FontData import FontData
 
 

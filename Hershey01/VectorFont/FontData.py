@@ -1,3 +1,11 @@
+# MISSION: Use the converted data in Modern Python.
+# STATUS: Public Release
+# VERSION: 1.0.0
+# NOTES: See https://github.com/soft9000/PyHershey
+# DATE: 2023-06-25 12:12:10
+# FILE: FontData.py
+# AUTHOR: See https://ko-fi.com/randallnagy
+#
 class FontData:
     ''' An easy way to manage an external collection of related Glyphs '''
 
