@@ -26,3 +26,5 @@ https://github.com/soft9000/The-Book-of-Glyphs/blob/master/TheHersheyFonts/bog_s
 Enjoy,
 
 -Rn
+
+p.s: Here's [the 'what's new' feed](https://ko-fi.com/randallnagy) 😜
