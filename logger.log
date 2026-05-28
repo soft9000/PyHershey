@@ -1,7 +1,0 @@
-2023/06/25: 16.08.03 (LOCAL)	python -m build
-2023/06/25: 16.08.29 (LOCAL)	import Hershey01 - need to include those gdict files on install.
-2023/06/25: 16.08.29 (LOCAL)	setup.py resolves above. Installers work OK.
-2023/07/01: 16.44.41 (LOCAL)	python3 -m twine upload --repository pypi dist/*
-2026/05/27: 12.28.34 (LOCAL)	Added headers. Uploaded to https://github.com/soft9000/PyHershey - unsure if it worked - commit looks blank.
-2026/05/27: 12.39.11 (LOCAL)	Uploaded again - worked.
-2026/05/27: 18.03.46 (LOCAL)	New wheels installer building and testing ok.
