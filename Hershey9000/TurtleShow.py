@@ -1,6 +1,6 @@
 # MISSION: Review the work of Dr. Allen Vincent Hershey using Modern Python.
 # STATUS: Public Release
-# VERSION: 1.1.0
+# VERSION: 1.2.0
 # NOTES: See https://github.com/soft9000/PyHershey
 # DATE: 2023-06-25 15:32:26
 # FILE: TurtleShow.py
@@ -10,6 +10,7 @@
 import turtle, time
 from Hershey9000.VectorFont.Font import Font
 
+DRAWN_DONE = 123
 is_done  = False
 num_msec = 1000
 
@@ -38,17 +39,20 @@ def stop_run():
         return
     is_done = True
     turtle.update()
+    for _ in range(5):
+        if is_done != DRAWN_DONE:
+            print('stopping')
+            time.sleep(3)
+        else:
+            print("ACK.")
+            break
     turtle.bye()
-    time.sleep(3)
+    print('stopped')
 
 
 def next_font():
     global font; global pw_font
     global which
-    global is_done
-    if is_done:
-        return
-
     which = 0
     pw_font += 1
     if pw_font >= len(font_names):
@@ -76,10 +80,10 @@ def draw_rectangle(zturt, x, y, width, height):
 
 
 def display_info():
-    global which; global font; global pw_rect
     global is_done
     if is_done:
         return
+    global which; global font; global pw_rect
     turtle4.hideturtle()
     turtle4.clear()
     turtle4.penup()
@@ -90,13 +94,16 @@ def display_info():
 
 
 def replay():
-    global is_done
     global which; global num_sec
     global pw_font; global font_names
     global font;  global pw_rect
-    global show_trace
+    global show_trace, is_done
+
     if is_done:
+        is_done = DRAWN_DONE
+        print("event.done1")
         return
+
     turtle4.clear()
     turtle3.clear()
     scale=8
@@ -108,6 +115,11 @@ def replay():
     turtle3.penup()
     turtle3.pensize(8)
 
+    if is_done:
+        is_done = DRAWN_DONE
+        print("event.done1")
+        return
+    
     pw_rect = font.calc_rect(which)
 
     pw_rect[0] *= scale
@@ -119,7 +131,10 @@ def replay():
     line = font.get_glyph(which)
     for ss, point in enumerate(line):
         if is_done:
+            is_done = DRAWN_DONE
+            print("event.done3")
             return
+        
         if ss % 2 == 0:
             if show_trace is False:
                 turtle3.penup()
@@ -139,8 +154,11 @@ def replay():
     display_info()
     turtle3.goto(pw_rect[0], pw_rect[1])
     if is_done == False:
+        print("ontimer")
         turtle.ontimer(replay, num_msec)
     else:
+        is_done = DRAWN_DONE
+        print("DRAW_DONE")
         return
 
 def mainloop():
@@ -166,9 +184,6 @@ def mainloop():
         turtle.mainloop() # .exitonclick()
         
     except:
-        pass
-
-    finally:
         stop_run()
 
 
