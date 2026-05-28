@@ -12,6 +12,7 @@ from Hershey9000.VectorFont.Font import Font
 INVERT = True # Switch between coordinate plans
 scale = 10
 pw_font = 0; which_glyph = 3
+font_names = Font.List_Fonts()
 font = Font.Load_Font(font_names[pw_font])
 line = font.get_glyph(which_glyph)
 turtle.pensize(6)
